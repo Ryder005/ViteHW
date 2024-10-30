@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing dependencies...
+      - npm install
+      - echo Installing Vite globally...
+      - npm install -g vite
+  pre_build:
+    commands:
+      - echo Adding npm bin to PATH...
+      - export PATH=$(npm bin):$PATH
+  build:
+    commands:
+      - echo Building the project...
+      - npm run build
+
+artifacts:
+  files:
+    - '**/*'
