@@ -15,7 +15,7 @@ phases:
     commands:
       - echo Building the project...
       - npm run build
-      - aws s3 cp dist s3://vite-project-oussmoh-static-website --recursive
+      - aws s3 sync dist s3://vite-project-oussmoh-static-website --delete
 
 artifacts:
   files:
