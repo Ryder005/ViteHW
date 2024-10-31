@@ -27,7 +27,7 @@ function App() {
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more. 
-Made By Oussmoh
+        <h1> Made By Oussmoh </h1>
       </p>
     </>
   )
